@@ -11,6 +11,18 @@
 </style>
 </head>
 <body>
+<p id="date"></p>
+<p id="time"></p>
+
+<script>
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+t = n.toLocaleTimeString();
+document.getElementById("date").innerHTML = "Date: " + m + "/" + d + "/" + y;
+document.getElementById("time").innerHTML = "Time: " + t;
+</script>
 <h1>Hi Amir, Welcome to nginx!</h1>
 <p>If you see this page, the nginx web server is successfully installed and
 working. Further configuration is required.</p>
